@@ -1,0 +1,76 @@
+.card {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 16px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.cardTitle {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111827;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.expenseForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.expenseForm label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.expenseForm input[type="number"],
+.expenseForm input[type="text"],
+.expenseForm select {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  font-size: 0.9rem;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.expenseForm input:focus,
+.expenseForm select:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.25);
+}
+
+.btn {
+  padding: 0.6rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.btnPrimary {
+  background: rgba(30, 58, 95, 0.7);
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(30, 58, 95, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.btnPrimary:hover {
+  background: rgba(45, 74, 111, 0.85);
+  box-shadow: 0 6px 20px rgba(30, 58, 95, 0.4);
+}

@@ -1,0 +1,26 @@
+/* Dashboard layout */
+.app {
+  min-height: 100vh;
+  background: #f3f4f6;
+}
+
+.appMain {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 1.5rem;
+  padding: 1.5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.leftPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .appMain {
+    grid-template-columns: 1fr;
+  }
+}
